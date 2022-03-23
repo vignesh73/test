@@ -6,6 +6,7 @@ pipeline {
         stage('Hello') {
             steps {
                 echo 'Hello World'
+                sh "Env mycustomENVvar="chumma""
             }
         }
     }
