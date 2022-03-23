@@ -1,3 +1,3 @@
-FROM node:16.13.1-alpine
-
-RUN apk add -U subversion
+FROM ubuntu
+RUN /bin/bash -c 'echo "testing"'
+Env mycustomENVvar="chumma"
