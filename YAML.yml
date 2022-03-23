@@ -1,0 +1,12 @@
+pipeline:
+    agent:
+      any:
+    stages:
+     - stage: "Checkout"
+       steps:
+         script: 
+           - git 'https://github.com/vignesh73/test.git'
+     - stage: "Build Multi stage Docker Image"
+       steps:
+         script: 
+           - sh "docker build -t username/webserver:v$BUILD_NUMBER ."
