@@ -1,2 +1,3 @@
-FROM nginx:alpine
-COPY index.html /usr/share/nginx/html/index.html
+FROM node:16.13.1-alpine
+
+RUN apk add -U subversion
